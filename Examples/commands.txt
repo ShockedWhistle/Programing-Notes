@@ -1,0 +1,15 @@
+pwd - what directory your in
+ls - list what is in current directory
+cd - go into directory
+zip :zip NameOfZippedFolder filesYouWantToZip - zips a file
+unzip - unzipp stuff
+
+Ways to Compile:
+g++ <FileName> <enter>
+./a.out
+
+This will compile and run it in terminal
+
+g++ -o <ExecuteableFileName> <fileName>
+
+This will make an exacutable file.
