@@ -1,3 +1,0 @@
-﻿Main.obj : error LNK2001: unresolved external symbol "public: static class sf::RenderStates const sf::RenderStates::Default" (?Default@RenderStates@sf@@2V12@B)
-Main.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Green" (?Green@Color@sf@@2V12@B)
-C:\Users\Darrell\Documents\Coding\C++\SFML\SFMLExamples\Debug\SFMLExamples.exe : fatal error LNK1120: 2 unresolved externals
