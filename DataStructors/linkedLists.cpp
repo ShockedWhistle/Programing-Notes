@@ -13,6 +13,7 @@ void incertBegining(Node** headPoint, int x){ // Takes a pointer of a pointer, t
 }
 
 void incert(Node** headPoint, int data, int pos){
+    // Using 0 asd first node in list instead of 1
     Node* temp = new Node();
     temp->data = data;
     temp->next = NULL;
@@ -22,7 +23,7 @@ void incert(Node** headPoint, int data, int pos){
         return;
     }
     Node temp1 = *headPoint;
-    for(int i=0; i<pos-2; i++){ // loop to the node before the one that you wanted to incert something to redirect it's pointer to the new one
+    for(int i=0; i<pos-1; i++){ // loop to the node before the one that you wanted to incert something to redirect it's pointer to the new one
         temp1 = temp1->next; // And then just make the new node's pointer point to the node that used to be where you inserted the new one
     }
     temp->next = temp1->next;
@@ -30,6 +31,21 @@ void incert(Node** headPoint, int data, int pos){
 }
 
 void deleteNode(Node** headPoint, int pos){
+    // Using 0 asd first node in list instead of 1
+    Node* temp = *headPoint;
+    if(pos == 1){ // If trying to delete the first node then just point the head to the second node and free the memory from the first
+        *headPoint = temp->next;
+        delete(temp);
+        return;
+    }
+    int i;
+    for(i=0; i<n-1; i++)
+        temp = temp->next;
+    Node* temp1 = temp->next; // The target node
+    temp->next = temp1->next;
+    delete(temp1); // Frees the memory used for the temp2 node if malloc is used free() should be used instead
+}
+void reverseList(Node** headPoint){
     
 }
 
