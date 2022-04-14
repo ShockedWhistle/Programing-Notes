@@ -3,6 +3,7 @@
 
 using namespace std;
 
+void incertBegining(Node** headPoint, int x){ // Takes a pointer of a pointer, the pointer to the head pointer, so we can still change it
     // Makes a new node that is now the fist in the list and will replace the first if needed
     Node* temp = (Node*)malloc(sizeof(struct Node)); // Just use new Node() instead 
     temp->data = x;
