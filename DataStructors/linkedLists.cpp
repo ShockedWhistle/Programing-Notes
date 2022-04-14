@@ -79,7 +79,5 @@ int main(){
     }
     temp1 -> link = temp;
 
-       // Test
-
     return 0;
 }
