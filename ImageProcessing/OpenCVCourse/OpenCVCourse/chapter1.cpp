@@ -1,4 +1,3 @@
-
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
@@ -33,7 +32,7 @@ void video() {
 
 // Webcam
 
-void main() {
+void webcam() {
 
 	VideoCapture cap(0); // The number is the camera id to use
 	Mat img;
