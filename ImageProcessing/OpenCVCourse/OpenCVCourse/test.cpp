@@ -1,4 +1,3 @@
-/*
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
@@ -10,7 +9,7 @@ using namespace std;
 
 /////////////////  Images  //////////////////////
 
-int main() {
+int test() {
 
     string path = "Resources/test.png";
     Mat img = imread(path);
@@ -18,4 +17,3 @@ int main() {
     waitKey(0);
     return 0;
 }
-*/
