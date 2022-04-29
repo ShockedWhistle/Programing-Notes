@@ -8,7 +8,7 @@ using namespace cv;
 
 // Color Detection
 
-void main() {
+void Color() {
 	string path = "Resources/lambo.png";
 	Mat img = imread(path);
 	Mat imgHSV, mask;
