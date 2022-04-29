@@ -21,6 +21,10 @@ void warpPerspective() {
 	matrix = getPerspectiveTransform(src, dst);
 	warpPerspective(img, imgWarp, matrix, Point(w, h));
 
+	for (int i = 0; i < 4; i++) {
+		circle(img, src[i], 10, Scalar(0, 0, 255), FILLED); // Puts circles where your geting the points from the image to warp
+	}
+
 	src[0] = { 60, 320 };
 	src[1] = { 340, 276 };
 	src[2] = { 86, 638 };
@@ -30,7 +34,7 @@ void warpPerspective() {
 	warpPerspective(img, queen, matrix, Point(w, h));
 
 	for (int i = 0; i < 4; i++) {
-		circle(img, src[i], 10, Scalar(0, 0, 255), FILLED); // Puts circles where your geting the points from the image to warp
+		circle(img, src[i], 10, Scalar(0, 80, 200), FILLED); // Puts circles where your geting the points from the image to warp
 	}
 
 	imshow("Cards", img);
