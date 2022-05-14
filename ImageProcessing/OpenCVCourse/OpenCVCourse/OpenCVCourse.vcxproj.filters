@@ -42,6 +42,9 @@
     <ClCompile Include="chapter8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="colorWebCam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="project1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
