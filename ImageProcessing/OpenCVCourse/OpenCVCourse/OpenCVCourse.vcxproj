@@ -28,7 +28,8 @@
     <ClCompile Include="chapter7.cpp" />
     <ClCompile Include="chapter8.cpp" />
     <ClCompile Include="colorWebCam.cpp" />
-    <ClCompile Include="project1.cpp" />
+    <ClCompile Include="findPixelColor.cpp" />
+    <ClCompile Include="targetWindow.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -45,7 +45,10 @@
     <ClCompile Include="colorWebCam.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="project1.cpp">
+    <ClCompile Include="findPixelColor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="targetWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
