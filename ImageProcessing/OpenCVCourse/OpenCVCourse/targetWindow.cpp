@@ -57,6 +57,8 @@ void main() {
 	LPCWSTR windowTitle = L"Spotify Free";
 
 	HWND hwnd = FindWindow(NULL, windowTitle);
+	SetForegroundWindow(hwnd);
+
 	while (!hwnd) {
 		system("cls");
 		cout << "Start" << endl;
@@ -65,6 +67,9 @@ void main() {
 
 	// Faster to create window
 	namedWindow("output", WINDOW_NORMAL);
+
+	//PostMessage(hwnd, WM_LBUTTONDOWN, MK_LBUTTON, BuildParam(300, 300));
+	SetCursorPos(500, 500);
 
 	while (true) {
 		Mat img = getMat(hwnd);
