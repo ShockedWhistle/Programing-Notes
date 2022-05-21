@@ -8,7 +8,7 @@ using namespace cv;
 
 // Color Detection
 
-void hsvFinder() {
+void web() {
 
 	VideoCapture cap(0);
 	Mat img;

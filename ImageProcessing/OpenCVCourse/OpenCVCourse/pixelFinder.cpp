@@ -51,10 +51,14 @@ Mat getMat(HWND hwnd) {
 	return mat;
 }
 
+void onMouse(int event, int x, int y, int f, void*) {
+	cout << x << " " << y << endl;
+	//putText(image, "point", Point(x,y), CV_FONT_HERSHEY_PLAIN, 1.0, CV_RGB(255,0,0));
+}
 
-void getE() {
+void main() {
 
-	LPCWSTR windowTitle = L"Spotify Free";
+	LPCWSTR windowTitle = L"Clicker Heroes";
 
 	HWND hwnd = FindWindow(NULL, windowTitle);
 	SetForegroundWindow(hwnd);
@@ -67,12 +71,14 @@ void getE() {
 
 	// Faster to create window
 	namedWindow("output", WINDOW_NORMAL);
+	namedWindow("Pixel Finder", WINDOW_NORMAL);
 
 	//PostMessage(hwnd, WM_LBUTTONDOWN, MK_LBUTTON, BuildParam(300, 300));
 	SetCursorPos(500, 500);
 
 	while (true) {
 		Mat img = getMat(hwnd);
+		setMouseCallback("output", onMouse, 0);
 
 		imshow("Output", img);
 		waitKey(30);
