@@ -8,8 +8,8 @@ using namespace cv;
 
 // Color Detection
 
-void mainfind() {
-	string path = "Resources/lambo.png";
+void main() {
+	string path = "Resources/20220525164212_1.jpg";
 	Mat img = imread(path);
 	Mat imgHSV, mask, nrgb;
 	Vec3b RGB = img.at<Vec3b>(300, 300);

@@ -29,7 +29,6 @@
     <ClCompile Include="chapter8.cpp" />
     <ClCompile Include="colorWebCam.cpp" />
     <ClCompile Include="findPixelColor.cpp" />
-    <ClCompile Include="pixelFinder.cpp" />
     <ClCompile Include="targetWindow.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>

@@ -56,7 +56,7 @@ void onMouse(int event, int x, int y, int f, void*) {
 	//putText(image, "point", Point(x,y), CV_FONT_HERSHEY_PLAIN, 1.0, CV_RGB(255,0,0));
 }
 
-void main() {
+void Pf() {
 
 	LPCWSTR windowTitle = L"Clicker Heroes";
 
